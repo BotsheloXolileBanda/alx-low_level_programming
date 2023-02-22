@@ -10,12 +10,12 @@
   */
 int main(void)
 {
-	int o;
+	int n;
 
-	for (o = 48; 0 <= 57; o++)
+	for (n = 48; n <= 57; n++)
 	{
-		putchar(o);
-	if (o == 57)
+		putchar(n);
+	if (n == 57)
 	{
 		continue;
 	}
