@@ -1,10 +1,9 @@
 #include "main.h"
 
-
 /**
   * main - Entry point
   *
-  * Description - prints a string to standard output
+  * Descripption ; prints a string
   *
   * Return: Always 0 (success)
   */
@@ -18,7 +17,6 @@ int main(void)
 	_putchar('h');
 	_putchar('a');
 	_putchar('r');
-	_putchar(',');
 	_putchar('\n');
 	return (0);
 }
