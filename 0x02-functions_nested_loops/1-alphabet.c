@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * print_alphabet prints lowercase alphabets to stdout
+  * print_alphabet - prints lowercase alphabets to stdout
   *
   * n - characters to print
   *
@@ -10,7 +10,8 @@
 void print_alphabet(void)
 {
 	int n;
-	for ( n = 97 ; n <= 122 ; n++ )
+
+	for (n = 97 ; n <= 122 ; n++)
 	{
 		_putchar(n);
 	}
