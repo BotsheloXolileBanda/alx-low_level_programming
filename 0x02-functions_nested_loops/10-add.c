@@ -4,8 +4,9 @@
 /**
   * add - calculates the sum of two numbers
   *
-  * @int: numbers to be added
+  * @a: number to be added
   *
+  * @b: number to be added
   * Return: sum of two numbers
   */
 int add(int a, int b)
