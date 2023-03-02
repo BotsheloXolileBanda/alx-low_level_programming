@@ -22,8 +22,6 @@ int main(void)
 			printf("Fizz ");
 		else if ((a % 5) == 0)
 			printf("Buzz ");
-		else if (a == 100)
-			printf("%d", a);
 		else
 			printf("%d ", a);
 	}
