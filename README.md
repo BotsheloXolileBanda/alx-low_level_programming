@@ -1,1 +1,1 @@
-A section on the workings of the C programming language
+A project on c low leve programming concepts

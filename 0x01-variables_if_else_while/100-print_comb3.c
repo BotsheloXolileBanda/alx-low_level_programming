@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stlib>
+#include <stdlib.h>
 #include <time.h>
 
 /**
@@ -17,15 +17,15 @@ int main(void)
 		{
 			if (p != d)
 			{
-				_putchar(p);
-				_putchar(d);
-				if (d == "8' && p == '9')
+				putchar(p);
+				putchar(d);
+				if (d == '8' && p == '9')
 					continue;
-				_putchar(',');
-				_putchar(' ');
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
