@@ -25,4 +25,17 @@ void print_to_98(int n)
 	}
 	else if (b = 98)
 	{
-		printf("
+		printf("b");
+	}
+	else
+	{
+		for (b = n; b > 98; b--)
+		{
+			printf("%d", b);
+			if (b == 98)
+				b--;
+			continue;
+			printf(", ");
+		}
+	}
+}
