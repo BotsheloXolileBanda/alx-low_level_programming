@@ -1,4 +1,4 @@
-#include <main.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -13,7 +13,6 @@ void print_most_numbers(void)
 	{
 		if (r == 50 || r == 52)
 		{
-			r++;
 			continue;
 		}
 		_putchar(r);
