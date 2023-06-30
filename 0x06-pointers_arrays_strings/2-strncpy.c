@@ -1,43 +1,46 @@
 #include "main.h"
 
 /**
- * _strncpy - Copies string 2 to string 1, subject to n.
- * @dest: First string.
- * @src: Second string.
- * @n: src byte limiter.
+ * _strncpy - Copies source string in n bytes to destination string.
+ * @dest: Destination string.
+ * @src: Source string.
+ * @n: Bytes source string is allowed to be copied to.
  *
- * Return: Pointer to dest.
+ * Return: Pointer to destination string.
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int q, r, s;
+	int w, x, y;
 
-	q = 0;
+	w = 0;
 
-	while (*(dest + q) != '\0')
-		q++;
-	r  = 0;
-
-	while (*(src + r) != '\0')
-		r++;
-	s = 0;
-
-	if (n <= r)
+	while (*(src + w) != '\0')
 	{
-		while (s < n)
+		w++;
+	}
+	y = 0;
+	x = 0;
+
+	if (n <= w)
+	{
+		while (x < n)
 		{
-			*(dest + s) = *(src + s);
-				s++;
+			*(dest + x) = *(src + x);
+			x++;
 		}
 	}
 	else
 	{
-		while (s < r)
+		while (y < w)
 		{
-			*(dest + s) = *(src + s);
-			s++;
+			*(dest + y) = *(src + y);
+			y++;
 		}
-		*(dest + q) = '\0';
+		while (*(dest + y) != '\0')
+		{
+			y++;
+		}
+		*(dest + y) = '\0';
 	}
 	return (dest);
 }
