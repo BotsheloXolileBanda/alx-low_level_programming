@@ -11,16 +11,19 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int j;
+	int p;
 
-	dest = malloc(sizeof(src) * n);
+	char *sfirst = dest;
 
-	j = 0;
+	char *ssecond = src;
 
-	while (j < n)
-	{
-		*(dest + j) = *(src + j);
-		j++;
-	}
+	p = 0;
+
+		while (n != 0)
+		{
+			*(sfirst + p) = *(ssecond + p);
+			n--;
+			p++;
+		}
 	return (dest);
 }
