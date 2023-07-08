@@ -4,7 +4,7 @@
 /**
  * main - Prints the product of two arguemnts passed to the program.
  *
- * @arc: Integer holding the count of arguments passed to the program.
+ * @argc: Integer holding the count of arguments passed to the program.
  * @argv: Array of strings passed as arguments to the program.
  *
  * Return: A value of 0 for success.
