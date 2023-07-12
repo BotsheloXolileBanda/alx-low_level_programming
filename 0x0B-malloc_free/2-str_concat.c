@@ -10,13 +10,13 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int g, f, t, x , y;
+	int g, f, t, x, y;
 	char *new_string;
 
 	if ((s1 == NULL) || (s2 == NULL))
 	{
-		s1 = "\0";
-		s2 = "\0";
+		s1 = "";
+		s2 = "";
 	}
 	else
 	{
