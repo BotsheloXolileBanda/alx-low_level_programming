@@ -10,8 +10,8 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int **block;
-	unsigned int r, s, z;
+	char *block;
+	unsigned int r;
 
 	if ((size == 0) || (nmemb == 0))
 	{
@@ -19,7 +19,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 	else
 	{
-		block = malloc(sizeof(*block) * nmemb);
+		block = (char *)malloc(sizeof(*block) * nmemb);
 
 		if (block == NULL)
 		{
@@ -31,23 +31,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 			while (r < nmemb)
 			{
-				block[r] = malloc(size);
+				*(block + r) = 0;
 				r++;
 			}
-			s = 0;
-
-			while (s < nmemb)
-			{
-				z = 0;
-
-				while (z < size)
-				{
-					block[s][z] = 0;
-					z++;
-				}
-				s++;
-			}
-			return (block);
 		}
+		return (block);
 	}
 }
