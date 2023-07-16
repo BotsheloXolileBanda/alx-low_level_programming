@@ -46,7 +46,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			while (*(s1 + p) != '\0')
 			{
 				*(new_string + p) = *(s1 + p);
-				p++
+				p++;
 			}
 			q = 0;
 			while (q < n)
