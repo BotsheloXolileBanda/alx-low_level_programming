@@ -29,7 +29,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		{
 			r = 0;
 
-			while (r < (nmemb *size))
+			while (r < (nmemb * size))
 			{
 				*(block + r) = 0;
 				r++;
