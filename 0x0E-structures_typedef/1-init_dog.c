@@ -4,7 +4,7 @@
 
 /**
  * init_dog - initialises struct dog type.
- * @*d: Pointer to struct.
+ * @d: Pointer to struct.
  * @name: Dog identifier.
  * @age: Age of dog.
  * @owner: Owner name.
