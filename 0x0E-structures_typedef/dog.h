@@ -7,6 +7,7 @@
  * @age: How old dog is.
  * @owner: Name of owner.
  *
+ * dog_t - Typedef for struct dog.
  */
 struct dog
 {
@@ -16,4 +17,5 @@ struct dog
 };
 typedef struct dog dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 #endif
