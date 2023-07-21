@@ -20,11 +20,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	while (r < n)
 	{
 		printf("%s", va_arg(jg, char *));
-		if (r != (n - 1))
+		if (rl != (n - 1))
 		{
 			printf("%s", *separator);
 		}
-		r++;
+		rl++;
 	}
 	printf("\n");
 	va_end(jg);
