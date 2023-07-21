@@ -24,7 +24,7 @@ int sum_them_all(const unsigned int n, ...)
 		r = 0;
 		sumofall = 0;
 
-		while(r < n)
+		while (r < n)
 		{
 			sumofall += va_arg(rj, unsigned int);
 			r++;
