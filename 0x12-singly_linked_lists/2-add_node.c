@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
 #include <stddef.h>
@@ -12,7 +13,7 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	struct list_s freshnode = malloc(sizeof(list_t));
+	struct list_s *freshnode = malloc(sizeof(list_t));
 
 	if (freshnode == NULL)
 	{
