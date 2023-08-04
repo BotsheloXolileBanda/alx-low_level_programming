@@ -5,7 +5,7 @@
 /**
  * main - Prints the program name.
  *
- * @arc: The argumet counter in integer form.
+ * @argc: The argumet counter in integer form.
  * @argv: A pointer to a pointer storing program arguments.
  * Return: A value to the OS, either 0 or 1.
  */
