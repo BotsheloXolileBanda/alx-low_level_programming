@@ -9,10 +9,10 @@
  * @c: The variable to fill the array.
  * Return: A pointer to the new and fresh string.
  */
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
 {
 	char *array_created;
-	int r;
+	unsigned int r;
 
 	array_created = malloc(sizeof(char) * size);
 
