@@ -13,29 +13,36 @@ char *_strdup(char *str)
 	char *strclone;
 	int r, s;
 
-	r = 0;
-
-	while (*(str + r) != '\0')
-	{
-		r++;
-	}
-	strclone = malloc(sizeof(char) * (r + 1));
-
-	if (strclone == NULL || str == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
 	else
 	{
-		s = 0;
+		r = 0;
 
-		while (s < r)
+		while (*(str + r) != '\0')
 		{
-			*(strclone + s) = *(str + s);
-			s++;
+			r++;
 		}
-		*(strclone + s) = '\0';
+		strclone = malloc(sizeof(char) * (r + 1));
 
-		return (strclone);
+		if (strclone == NULL)
+		{
+			return (NULL);
+		}
+		else
+		{
+			s = 0;
+
+			while (s < r)
+			{
+				*(strclone + s) = *(str + s);
+				s++;
+			}
+			*(strclone + s) = '\0';
+
+			return (strclone);
+		}
 	}
 }
