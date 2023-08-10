@@ -12,7 +12,7 @@
 int *array_range(int min, int max)
 {
 	int *created_arraye;
-	int r, s;
+	int r, s, t;
 
 	if (min > max)
 	{
@@ -20,7 +20,9 @@ int *array_range(int min, int max)
 	}
 	else
 	{
-		created_arraye = malloc(sizeof(int) * (max - min));
+		t = max - min;
+
+		created_arraye = malloc(sizeof(int) * (t + 1));
 
 		if (created_arraye == NULL)
 		{
