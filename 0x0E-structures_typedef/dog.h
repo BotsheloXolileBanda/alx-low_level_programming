@@ -2,7 +2,7 @@
 #define _DOG_H_
 
 /**
- * dog - A struct called dog that I have defined.
+ * struct dog - A struct called dog that I have defined.
  *
  * @name: The identifier for the animal.
  * @age: A variable of float type for age.
