@@ -27,7 +27,7 @@ int sum_them_all(const unsigned int n, ...)
 
 		r = 0;
 
-		while ( r < (n - 1))
+		while (r < (n - 1))
 		{
 			k += va_arg(argu_ptr, int);
 			r++;
