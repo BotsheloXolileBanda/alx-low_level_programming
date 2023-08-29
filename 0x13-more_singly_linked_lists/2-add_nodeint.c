@@ -10,7 +10,7 @@
  * @n: The value part of the list.
  * Return: The fresh component.
  */
-listint_t *add_nodeint(const listint_t **head, int n)
+listint_t *add_nodeint(listint_t **head, int n)
 {
 	listint_t *ltst = malloc(sizeof(listint_t));
 
@@ -21,7 +21,7 @@ listint_t *add_nodeint(const listint_t **head, int n)
 	else
 	{
 		ltst->n = n;
-		ltst->head = *head;
+		ltst->next = *head;
 
 		*head = ltst;
 		return (ltst);
