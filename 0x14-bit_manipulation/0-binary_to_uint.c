@@ -24,10 +24,10 @@ unsigned int binary_to_uint(const char *b)
 
 		while (*(b + r) != '\0')
 		{
-			/*if ((*(b + r) != 48) || (*(b + r) != 49))
+			if ((*(b + r) != 48) && (*(b + r) != 49))
 			{
 				return (0);
-			}*/
+			}
 			r++;
 		}
 		bint = atoi(b);
