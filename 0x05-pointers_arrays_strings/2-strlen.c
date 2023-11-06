@@ -2,9 +2,8 @@
 
 /**
  * _strlen - Computes the length of a string.
- * 
  * @s: The string to compute.
- * return: The number of characters in a string.
+ * Return: The number of characters in a string.
  */
 int _strlen(char *s)
 {
