@@ -19,7 +19,12 @@ void print_rev(char *s)
 
 	while (k >= 0)
 	{
-		_putchar(*(s + (k - 1)));
+		if (*(s + k) == '\0')
+		{
+			k--;
+			continue;
+		}
+		_putchar(*(s + k));
 		k--;
 	}
 	_putchar('\n');
