@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		res = argv[1] * argv[2];
+		res = (atoi)argv[1] *(atoi)argv[2];
 		return (res);
 	}
 }
