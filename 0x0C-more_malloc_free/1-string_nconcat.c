@@ -13,6 +13,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int r, m, p, q;
 	char *newstr;
 
+	while (s1 == NULL)
+	{
+		s1 = "";
+	}
+	while (s2 == NULL)
+	{
+		s2 = "";
+	}
 	for (r = 0; *(s1 + r) != '\0'; r++)
 	{
 		;
