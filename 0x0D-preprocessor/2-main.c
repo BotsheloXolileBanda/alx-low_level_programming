@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Uses a predefined macro to print the name of the program it was compiled from.
+ * main - Uses a predefined macro to print the name of the program.
  *
  * Return: A value of 0 or 1.
  */
