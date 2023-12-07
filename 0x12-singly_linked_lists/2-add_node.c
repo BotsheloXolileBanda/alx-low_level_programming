@@ -18,6 +18,7 @@ list_t *add_node(list_t **head, const char *str)
 	else
 	{
 		minted->str = strdup(str);
+		minted->len = strlen(str);
 		minted->next = (*head);
 		(*head) = minted;
 		return (minted);
