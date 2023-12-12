@@ -10,6 +10,7 @@
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *freshestnode =  malloc(sizeof(listint_t));
+
 	if (!freshestnode)
 	{
 		return (NULL);
