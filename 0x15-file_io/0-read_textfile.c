@@ -31,6 +31,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 			fdes = open(filename, O_RDWR);
 			if (fdes == -1)
 			{
+				free(storg);
 				return (0);
 			}
 			else
@@ -38,6 +39,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 				charsr = read(fdes, storg, letters);
 				if (charsr == -1)
 				{
+					close(fdes);
+					free(storg);
 					return (0);
 				}
 				else
@@ -49,11 +52,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 					charsw = write(1, storg, r);
 					if (charsw == -1)
 					{
+						close(fdes);
+						free(storg);
 						return (0);
 					}
 					else
 					{
-						free (storg);
+						free(storg);
 						close(fdes);
 						return (charsw);
 					}
