@@ -12,6 +12,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int fdes;
 	ssize_t charsr;
 	ssize_t charsw;
+	size_t r;
 	char *storg;
 
 	if (filename == NULL)
@@ -20,7 +21,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	else
 	{
-		storg = malloc(letters + 1);
+		storg = malloc(letters);
 		if (!storg)
 		{
 			return (0);
@@ -41,8 +42,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 				}
 				else
 				{
-					storg[letters] = '\n';
-					charsw = write(1, storg, letters);
+					storg[charsr] = '\0';
+					for (r = 0; *(storg + r) != '\0'; r++)
+					{
+					}
+					charsw = write(1, storg, r);
 					if (charsw == -1)
 					{
 						return (0);
