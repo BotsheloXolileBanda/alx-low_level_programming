@@ -1,7 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <stdio.h>
+#include <stdlib.h>
 void _puts_recursion(char *s);
 int _putchar(char c);
 int _pow_recursion(int x, int y);
+int _strlen_recursion(char *s);
 #endif
