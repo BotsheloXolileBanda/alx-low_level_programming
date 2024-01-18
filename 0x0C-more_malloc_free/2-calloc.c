@@ -18,7 +18,7 @@ void *_calloc(size_t nmemb, size_t size)
 	}
 	else
 	{
-		calloced = malloc(sizeof (*calloced) * (nmemb * size));
+		calloced = malloc(sizeof(*calloced) * (nmemb * size));
 		if (!calloced)
 		{
 			return (NULL);
