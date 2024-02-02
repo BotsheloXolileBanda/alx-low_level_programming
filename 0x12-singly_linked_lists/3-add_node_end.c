@@ -38,7 +38,14 @@ list_t *add_node_end(list_t **h, const char *str)
 		}
 		return (added);
 	}
-}int _strlen(const char *_str)
+}
+/**
+  * _strlen - Gets length of string.
+  * @_str: Particular string.
+  *
+  * Return: Length.
+  */
+int _strlen(const char *_str)
 {
 	int r = 0;
 
