@@ -3,7 +3,7 @@
 /**
   * pop_listint - Deletes the start of a list.
   *
-  * @h: Head node.
+  * @head: Head node.
   * Return: Content of head node.
   */
 int pop_listint(listint_t **head)
