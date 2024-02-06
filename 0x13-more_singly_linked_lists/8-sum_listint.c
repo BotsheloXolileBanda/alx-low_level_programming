@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-  * sum_listsint - Returns the sum of data in list.
+  * sum_listint - Returns the sum of data in list.
   *
   * @head: Data to sum.
   * Return: The sum or 0.
