@@ -5,7 +5,7 @@ int _strlen(const char *string);
   * create_file - Creates a file with a string.
   *
   * @filename: Name of file.
-  * @text_content - String to put in file.
+  * @text_content: String to put in file.
   * Return: 1 on succes, -1 otherwise.
   */
 int create_file(const char *filename, char *text_content)
@@ -28,7 +28,7 @@ int create_file(const char *filename, char *text_content)
 		{
 			if (text_content == NULL)
 			{
-				close (fildes);
+				close(fildes);
 				return (1);
 			}
 			else
@@ -37,18 +37,24 @@ int create_file(const char *filename, char *text_content)
 
 				if (wrtbts == -1)
 				{
-					close (fildes);
+					close(fildes);
 					return (-1);
 				}
 				else
 				{
-					close (fildes);
+					close(fildes);
 					return (1);
 				}
 			}
 		}
 	}
 }
+/**
+  * _strlen - Computes length of string.
+  *
+  * @string: Particular string.
+  * Return: Length
+  */
 int _strlen(const char *string)
 {
 	int r = 0;
