@@ -45,7 +45,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 				{
 					savein_mem[letters] = '\0';
 
-					wrote_val = write(STDOUT_FILENO, savein_mem, letters);
+					wrote_val = write(STDOUT_FILENO, savein_mem, read_val);
 
 					if (wrote_val <=  0)
 					{
