@@ -31,6 +31,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 			if (fildes < 0)
 			{
+				free(savein_mem);
 				return (0);
 			}
 			else
@@ -39,6 +40,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 				if (read_val <= 0)
 				{
+					close (fildes);
 					return (0);
 				}
 				else
@@ -49,6 +51,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 					if (wrote_val <=  0)
 					{
+						close(fildes);
 						return (0);
 					}
 					else
